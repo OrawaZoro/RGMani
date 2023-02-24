@@ -1,0 +1,422 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../resources/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Open-Sans";
+  src: url("../resources/OpenSans/static/OpenSans/OpenSans-Bold.ttf");
+}
+@font-face {
+  font-family: "Sofia-Sans";
+  src: url("../resources/SofiaSans/static/SofiaSansSemiCondensed-Medium.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #0a192f;
+}
+
+li {
+  list-style-type: none;
+}
+
+a,
+span {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Open-Sans";
+}
+
+span {
+  color: #64ffda;
+  padding-right: 8px;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.main {
+  min-height: 100%;
+}
+
+.head-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list span {
+  font-size: 17px;
+  padding-left: 40px;
+}
+
+.nav-list a {
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  color: #ccd6f6;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+}
+
+.hero {
+  margin-top: 200px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: "Sofia-Sans";
+  font-size: 75px;
+  line-height: 1.1;
+  color: #ccd6f6;
+}
+
+.hero .role {
+  color: #64ffda;
+}
+
+.slogan {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 700;
+  color: #8892b0;
+  margin-top: 50px;
+}
+
+.about-me {
+  margin-top: 200px;
+}
+
+#about-head, #work-head{
+  display: flex;
+  align-items: center;
+  font-family: "Roboto";
+  font-size: 32px;
+  color: #ccd6f6;
+}
+
+#about-head .deco, #work-head .deco {
+  width: 300px;
+  height: 1px;
+  margin-left: 30px;
+  background-color: #233554;
+}
+
+.about-me p {
+    font-size: 20px;
+    font-family: 'Roboto';
+    color: #8892B0;
+    margin-top: 30px;
+}
+
+.about-container {
+    display: flex;
+}
+
+.about-container .about{
+    text-align: justify;
+    line-height: 1.5;
+    flex: 0 1 60%;
+}
+
+.about-container div {
+    margin-left: 40px;
+    flex: 0 1 40%;
+}
+
+.work-container {
+    margin-top: 200px;
+}
+
+.work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    font-family: 'Roboto';
+    text-align: right;
+    color: #ccd6f6;
+}
+
+.work-content {
+    margin-left: 20px;
+}
+
+.work-content h1{
+    font-size: 28px;
+}
+
+.work-content p {
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    background-color: #112240;
+    color: #64ffda;
+    margin: 20px 0;
+}
+
+.techs a, .about a{
+    font-weight: 100;
+    font-size: 13px;
+    color: #A8B2D1;
+    padding-left: 10px;
+}
+
+.work-content, #work-img {
+    flex-basis: 50%;
+}
+
+.left {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+.icon {
+    margin-top: 20px;
+}
+
+.about a {
+    display: block;
+    font-size: 16px;
+    padding-left: 0;
+}
+
+.contact-container {
+    border-top: 2px solid #233554;
+    margin-top: 200px;
+    font-family: 'Sofia-Sans';
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-container h1 {
+    font-size: 100px;
+    color: #64ffda;
+}
+
+.contact-container p{
+    margin: 10px 0;
+    color: #ccd6f6;
+    font-size: 20px;
+}
+
+.contact-container .mail a {
+    font-family: 'Roboto';
+    font-size: 18px;
+    color: #ccd6f6;
+    padding-bottom: 10px;
+}
+
+.contact-container .mail a:hover {
+    text-decoration: underline;
+}
+
+.social a {
+    padding-left: 5px;
+    font-family: 'Roboto';
+    font-size: 18px;
+    color: #ccd6f6;
+}
+
+.social a:hover {
+    text-decoration: line-through;
+}
+
+.about-container img{
+  margin-top: 20px;
+  border-radius: 50%;
+}
+
+.mr-bottom {
+  margin-bottom: 20px;
+}
+
+.hamburger {
+  display: none;
+}
+
+i {
+  font-size: 30px;
+  color: #ccd6f6;
+}
+
+.main a:hover, .main i:hover {
+  color: #64ffda;
+}
+@media all and (max-width: 900px) {
+
+  .main{
+    min-height: 100%;
+  }
+
+  .work {
+    flex-wrap: wrap;
+  }
+
+  .work-img, .work-content {
+    text-align: center;
+    flex-basis: 100%;
+  }
+
+  #work-head .deco {
+    width: 200px;
+    margin-left: 20px;
+  }
+
+  .work-container {
+    margin-top: 100px;
+  }
+
+  .work-container h1 {
+    margin: 20px 0;
+  }
+
+  .left {
+    order: 1;
+  }
+
+  .contact-container {
+    margin-top: 100px;
+  }
+}
+
+@media all and (max-width: 800px) {
+
+  .main {
+    min-height: 100%;
+  }
+
+  .deco {
+    display: none;
+  }
+
+  #work-head, #about-head  {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #233554;
+  }
+  .about-container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .about-container .about {
+    flex: 1 1 100%;
+    order: 1;
+  }
+
+  .about p {
+    text-align: start;
+    line-height: 1.3;
+    word-spacing: .1px;
+  }
+
+  .about-container img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .about-me {
+    margin-top: 100px;
+  }
+
+}
+
+@media all and (max-width: 700px) {
+
+  .main{
+    min-height: 100%;
+  }
+
+  .hero h1 {
+    font-size: 60px;
+  }
+
+  .slogan {
+    font-size: 20px;
+  }
+
+  #about-head, #work-head {
+    font-size: 26px;
+  }
+
+  .work-content h1 {
+    font-size: 24px;
+  }
+
+  .icon {
+    font-size: 12px;
+  }
+
+  .contact-container h1 {
+    font-size: 80px;
+  }
+
+  .hamburger {
+    display: block;
+    position: relative;
+    z-index: 2;
+    flex: 1;
+    text-align: left;
+    margin-left: 30px;
+  }
+
+  #menus {
+    order: -1;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    z-index: 1;
+    top: -80px;
+    left: -100%;
+    width: calc(50vw + 70px);
+    height: 100vh;
+    background-color: #112240;
+  }
+
+  .nav-list span {
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+    padding-right: 5px;
+  }
+
+  .nav-list a {
+    font-size: 25px;
+  }
+
+  .head-container {
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+  }
+  #hero-img {
+    margin-left: 0px;
+  }
+
+  .hero {
+    margin-top: 70px;
+  }
+}
